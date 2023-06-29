@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
 
   //   // your code here
 
@@ -50,16 +50,89 @@ document.addEventListener("DOMContentLoaded", () => {
 // As a user, I should be able to type a task into the input field.
 // As a user, I should be able to click some form of a submit button.
 // As a user, I expect to see the task string that I provided appear in the DOM after the submit button has been activated.
+// const submitForm= document.querySelector("#new-task-description")
+// const form =document.getElementById("create-task-form")
+// let listTasks = document.getElementById("tasks")
+// let inputTask= submitForm.value 
+
+
+// form.addEventListener("submit",handleForm) // event listener to handle the submit
+// form.reset()
+
+// function handleForm(e){
+//   e.preventDefault() //prevents any default behaviour with the form
+//   let listItem= document.createElement("li")
+//   listItem.textContent =`${inputTask}`
+//   listTasks.appendChild(listItem)
+//   submitForm.value =""
+// }
+
+// })
+
+// document.querySelector("button").addEventListener("click",foo)
+
+// function foo(){
+//   console.log("hey")
+// }
+// setTimeout(()=>{
+//   console.log("one"),3000 //asynchronous code 
+// })
+// console.log("two")
+// console.log("three")
+
+// fetch("http://localhost:3000")
+// .then(response => response.json())
+// // console.log("after fetch")
+// .then(data=> console.log(data))
+// dom manipulation review
+//dom manipulation 
+// function renderOneAnimal(animal){
+//   //build an animal
+//   let card =document.createElement("li")
+//   card.className="card"
+//   card.innerHTML=`
+//   <img src ="${animal.imageUrl}"/>
+//   <div class="content">
+//   </div>
+//   <h4>${animal.name}</h4>
+//   <p></p>
+  
+//   `
+// }
+
+
+
+//function initialiaze(){
+  //load and render animals to the DOM
+
+  // animalData.forEach(animal => {
+  //   renderOneAnimal(animal)
+  // });
+//   getAllAnimals()
+// }
+// initialiaze()
+
+
+// function getAllAnimals(){
+//   fetch("http://localhost:3000/comments")
+//   .then(resp => resp.json())
+//   .then(humanData => humanData.forEach(human => {
+//     rende
+//   });)
+//   console.log("before fetch")
+// }
+
 const submitForm= document.querySelector("#new-task-description")
 const form =document.getElementById("create-task-form")
 let listTasks = document.getElementById("tasks")
-let inputTask= submitForm.value 
+
 
 
 form.addEventListener("submit",handleForm) // event listener to handle the submit
 form.reset()
 
 function handleForm(e){
+  let inputTask= submitForm.value 
   e.preventDefault() //prevents any default behaviour with the form
   let listItem= document.createElement("li")
   listItem.textContent =`${inputTask}`
@@ -68,4 +141,3 @@ function handleForm(e){
 }
 
 })
-
